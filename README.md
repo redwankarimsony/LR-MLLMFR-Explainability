@@ -1,8 +1,8 @@
 # MLLM-based Textual Explanations for Face Comparison
 
-This repository contains the code and prompt templates for the paper **"MLLM-based Textual Explanations for Face Comparison"** accepted at IWBF 2025.
+This repository contains the code and prompt templates for the paper **"MLLM-based Textual Explanations for Face Comparison"** accepted at IWBF 2026.
 
-**Authors:** Redwan Sony, Anil K. Jain, Ross Arun
+**Authors:** Redwan Sony, Anil K. Jain, Arun Ross
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.16629-b31b1b.svg)](https://arxiv.org/abs/2603.16629)
 
