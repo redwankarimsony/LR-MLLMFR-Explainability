@@ -45,6 +45,7 @@ Face Image Pairs
 ├── Notebook_OpenAi.py             # Explanation generation via GPT models
 ├── Notebook_Gemini.py             # Explanation generation via Gemini models
 ├── Notebook_Claude.py             # Explanation generation via Claude models
+├── PROMPTS.md                     # All system and user prompt templates (multi-level prompting strategy)
 ├── Notebook_Embedding.ipynb       # Embed textual explanations into vectors
 ├── ClusterSeparability.py         # Cluster separability analysis on embeddings
 ├── ResultsAnalysis.ipynb          # Final result analysis and reporting
@@ -60,7 +61,7 @@ Face Image Pairs
 
 ### Step 1 — Generate Explanations
 
-Each notebook script queries a different MLLM provider with face image pairs and saves per-pair textual explanations as `.txt` files. They all share the same structured prompt format (Match Verdict, Similarity Attributes, Distinctive Differences, Overall Reasoning).
+Each notebook script queries a different MLLM provider with face image pairs and saves per-pair textual explanations as `.txt` files. We adopt a multi-level prompting strategy with four prompt variants providing progressively increasing FR information. Full prompt templates and descriptions are documented in [PROMPTS.md](PROMPTS.md).
 
 **OpenAI (GPT-4o / GPT-5.2)**
 ```bash
