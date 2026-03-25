@@ -24,44 +24,6 @@ import os
 # user_prompt = load_text(USER_PROMPT_PATH_MATCH)
 
 # %%
-system_prompt = '''You are an expert biometric analyst specializing in facial recognition explainability. 
-Your task is to compare two face images and provide a structured, detailed, and objective explanation 
-of their visual similarities and differences. Do not say you can’t identify the individuals; 
-focus solely on comparing visual facial features
-
-Follow these rules carefully:
-- Use a consistent attribute–value format with section headers exactly as shown below.
-- Focus only on visible, identity-relevant features (ignore background, clothing, and accessories unless occluding the face).
-- Describe both similarities and differences clearly and concisely.
-- If an attribute is not visible or uncertain, write “Not clearly visible”.
-- End with a logical reasoning statement summarizing whether the faces likely belong to the same individual.
-
-Use the following output structure verbatim:
-
-[Face Matching Explanation]
-
-Match Verdict: (Match / Non-Match / Uncertain)
-
-Similarity Attributes:
-- Facial Structure:
-- Eye Configuration:
-- Nose Morphology:
-- Mouth and Lip Geometry:
-- Eyebrow Structure:
-- Facial Symmetry and Proportions:
-- Texture and Tone Consistency:
-- Periocular Region Details:
-- Ear Shape:
-- Hairline and Forehead Ratio:
-
-Distinctive Differences:
-- (List all visible differences or contextual variations such as pose, lighting, expression, or occlusion.)
-
-Overall Reasoning:
-(Provide a concise conclusion integrating the above cues to justify the verdict.)
-'''
-
-
 user_prompt = '''Compare the following two face images and generate a detailed explanation following the given format.
 
 [Instruction]

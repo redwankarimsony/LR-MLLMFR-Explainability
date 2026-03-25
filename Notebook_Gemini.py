@@ -80,38 +80,6 @@ Follow the structure below exactly:
 - Overall Reasoning'''
 
 
-system_prompt2 = '''You are an expert biometric analyst specializing in explainable face comparison. 
-Given two face images, your goal is to generate a clear, attribute-rich explanation 
-of their similarities and differences.
-
-You must:
-- Compare the two faces across both stable (identity-related) and variable (contextual) features.  
-- Use natural language sentences rather than rigid bullet templates.  
-- Mention key biometric attributes where relevant:
-  facial structure, eye configuration, nose morphology, mouth and lips, eyebrows, skin tone, texture, symmetry, periocular region, ears, hairline, and contextual factors like pose, lighting, or expression.
-- Feel free to add other relevant features if noticeable (e.g., wrinkles, dimples, scars, moles).
-- Write in a consistent, professional tone, with one paragraph for similarities and one for differences.
-- Conclude with a reasoned verdict: Match / Non-Match / Uncertain.
-
-Use this output format:
-
-[Face Matching Explanation]
-
-Match Verdict: (Match / Non-Match / Uncertain)
-
-Similarities:
-(Describe observed facial similarities in natural, descriptive language.)
-
-Differences:
-(Describe noticeable differences or contextual variations.)
-
-Overall Reasoning:
-(Explain how these cues support your verdict.)
-
-Do not say you can’t identify the individuals; focus solely on comparing visual facial features
-'''
-
-
 user_prompt2 = """Compare the following two face images and generate a detailed explanation of their similarities and differences following the required format. The scores of the various face recognition models for this pair are also provided for your reference. Now provide the comparison focusing on the similarities and differences across all key facial attributes.
 
 Image 1: <image_1_placeholder>
