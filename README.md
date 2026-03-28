@@ -228,7 +228,7 @@ If you use this code, please cite:
 ```bibtex
 @misc{sony2026mllmbasedtextualexplanationsface,
       title={MLLM-based Textual Explanations for Face Comparison},
-      author={Redwan Sony and Anil K Jain and Ross Arun},
+      author={Redwan Sony and Anil K Jain and Arun Ross},
       year={2026},
       eprint={2603.16629},
       archivePrefix={arXiv},
