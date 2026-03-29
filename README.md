@@ -137,7 +137,16 @@ python ClusterSeparability.py
 
 **Cluster Separability Metrics (Table I from paper):**
 
-![Cluster Separability Table](figs/cluster_separability.jpg)
+*Cluster separation with metrics Silhouette coefficient, Davies-Bouldin (DB) index, Calinski-Harabasz (CH) score, Inter-/Intra-cluster distance ratio, and Fisher ratio computed on the original embedding space. ↑ indicates higher is better and ↓ indicates lower is better. Best and second-best values are highlighted in **red** and **blue**, respectively.*
+
+| Prompt Type | Silh. ↑ | DB ↓ | CH ↑ | Inter/Intra ↑ | Fisher ↑ |
+|---|---|---|---|---|---|
+| GPT-4o + GT | <span style="color:red">**0.30**</span> | <span style="color:red">**1.38**</span> | <span style="color:red">**4677.57**</span> | <span style="color:red">**1.43**</span> | <span style="color:red">**1.00**</span> |
+| GPT-4o + No Score (5c) | 0.22 | 1.76 | 2837.58 | 1.27 | 0.61 |
+| GPT-4o + FR Scores (5d) | 0.18 | 2.13 | 1936.36 | 1.21 | 0.41 |
+| GPT-4o + Scores + Decisions (5e) | 0.25 | 1.65 | 3370.05 | 1.34 | 0.71 |
+| GPT-4o + KPRPE (5f) | <span style="color:blue">**0.28**</span> | <span style="color:blue">**1.49**</span> | <span style="color:blue">**4078.40**</span> | <span style="color:blue">**1.40**</span> | <span style="color:blue">**0.86**</span> |
+| Gemini + Scores + Decisions | 0.24 | 1.62 | 3358.18 | 1.31 | 0.72 |
 
 *Table I — Cluster separation metrics computed on the original embedding space across prompt types. GPT-4o + GT achieves the best separation across all metrics. Among test-time prompts, GPT-4o + KPRPE (score + decision) is consistently second-best.*
 
@@ -183,7 +192,7 @@ python -m lr_model.train_only \
 
 **LR Evaluation ROC Curves:**
 
-![ROC Curves](figs/roc.jpg)
+<p align="center"><img src="figs/roc.jpg" alt="ROC Curves" width="500"></p>
 
 *Fig. 6 — Likelihood-ratio–based evaluation of textual explanations. ROC curves derived from LR scores under different prompting strategies. Prompts conditioned on FR scores and decisions (KPRPE + Dec., FR Scores + Dec.) reach AUC = 0.997, substantially outperforming the No-score prompt (AUC = 0.988) at low false match rates.*
 
@@ -228,7 +237,7 @@ If you use this code, please cite:
 ```bibtex
 @misc{sony2026mllmbasedtextualexplanationsface,
       title={MLLM-based Textual Explanations for Face Comparison},
-      author={Redwan Sony and Anil K Jain and Ross Arun},
+      author={Redwan Sony and Anil K Jain and Arun Ross},
       year={2026},
       eprint={2603.16629},
       archivePrefix={arXiv},
