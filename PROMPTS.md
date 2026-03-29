@@ -259,7 +259,7 @@ Example `[Model Scores]` block (Score+Decision):
 Example `[Model Scores]` block (multi-model, Score+Decision):
 ```json
 {
-  "ArcFace": [0.45, "Non-Match"],
+  "ArcFace": [0.32, "Non-Match"],
   "CosFace": [0.51, "Match"],
   "KPRPE": [0.72, "Match"]
 }
