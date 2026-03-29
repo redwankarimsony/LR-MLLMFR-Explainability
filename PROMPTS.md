@@ -12,6 +12,8 @@ Two system prompt variants are used across the scripts.
 
 ---
 
+<a name="system-prompt-a"></a>
+
 ### System Prompt A — Natural Language Style
 **Used by:** `Notebook_OpenAi.py` (`system_prompt2`), `Notebook_Claude.py` (`SYSTEM_PROMPT_2`)
 
@@ -163,6 +165,8 @@ Image 2: <image_2_placeholder>
 
 The MLLM receives the face image pair and FR similarity scores **without** binary match/non-match decisions. Two sub-variants exist.
 
+<a name="prompt-iii-a"></a>
+
 #### iii-a) Multi-model Scores
 **Variable name:** `user_prompt_dataget_inference_with_multi_scores` (OpenAI, Gemini) / `USER_PROMPT_WITH_SCORES` (Claude)
 **Experiment name:** `with-scores`
@@ -202,6 +206,8 @@ Image 2: <image_2_placeholder>
 ```
 
 ---
+
+<a name="prompt-iv"></a>
 
 ### iv) Score+Decision Prompting
 
