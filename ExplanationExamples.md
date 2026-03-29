@@ -23,7 +23,7 @@ Image 2: [see right image below]
 
 ## Output
 
-<pre>
+<pre style="white-space: pre-wrap;">
 <strong>Match Verdict:</strong> Match
 
 <strong>Similarity Attributes:</strong>
@@ -68,7 +68,7 @@ Image 2: [see right image below]
 
 ## Output
 
-<pre>
+<pre style="white-space: pre-wrap;">
 <strong>Match Verdict:</strong> Match
 
 <strong>Similarities:</strong>
@@ -113,7 +113,7 @@ Image 2: [see right image below]
 
 ## Output
 
-<pre>
+<pre style="white-space: pre-wrap;">
 <strong>Match Verdict:</strong> Non-Match
 
 <strong>Similarities:</strong>
@@ -141,7 +141,7 @@ The following example demonstrates how the **same genuine pair** is explained un
 
 **System Prompt:** [System Prompt A — Natural Language Style](PROMPTS.md#system-prompt-a) + User prompt with no model scores
 
-<pre>
+<pre style="white-space: pre-wrap;">
 <strong>Match Verdict:</strong> Match
 
 <strong>Similarities:</strong>
@@ -160,7 +160,7 @@ The similarities in facial structure, features, and skin attributes, combined wi
 
 **System Prompt:** [System Prompt A — Natural Language Style](PROMPTS.md#system-prompt-a) + [Prompt iii-a — Score-only, Multi-model](PROMPTS.md#prompt-iii-a)
 
-<pre>
+<pre style="white-space: pre-wrap;">
 <strong>Match Verdict:</strong> Uncertain
 
 <strong>Similarities:</strong>
@@ -179,7 +179,7 @@ The similarities in stable features such as hair and general facial structure su
 
 **System Prompt:** [System Prompt A — Natural Language Style](PROMPTS.md#system-prompt-a) + [Prompt iv — Score+Decision, Multi-model](PROMPTS.md#prompt-iv)
 
-<pre>
+<pre style="white-space: pre-wrap;">
 <strong>Match Verdict:</strong> Match
 
 <strong>Similarities:</strong>
