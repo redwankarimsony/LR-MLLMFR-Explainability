@@ -6,6 +6,10 @@ This repository contains the code and prompt templates for the paper **"MLLM-bas
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.16629-b31b1b.svg)](https://arxiv.org/abs/2603.16629)
 
+**Quick links:**
+- 📋 [Prompt Templates](PROMPTS.md) — all system and user prompts across the multi-level prompting strategy
+- 💬 [Explanation Examples](ExplanationExamples.md) — sample MLLM-generated explanations across prompt styles
+
 ## Overview
 
 We systematically analyze MLLM-generated explanations for unconstrained face verification, with a focus on extreme pose variation and surveillance imagery. We introduce a likelihood-ratio (LR) based framework to evaluate the evidential strength of textual explanations beyond categorical accuracy.
@@ -46,6 +50,7 @@ Face Image Pairs
 ├── Notebook_Gemini.py             # Explanation generation via Gemini models
 ├── Notebook_Claude.py             # Explanation generation via Claude models
 ├── PROMPTS.md                     # All system and user prompt templates (multi-level prompting strategy)
+├── ExplanationExamples.md         # Example MLLM-generated explanations across prompt styles
 ├── Notebook_Embedding.ipynb       # Embed textual explanations into vectors
 ├── ClusterSeparability.py         # Cluster separability analysis on embeddings
 ├── ResultsAnalysis.ipynb          # Final result analysis and reporting
@@ -61,7 +66,7 @@ Face Image Pairs
 
 ### Step 1 — Generate Explanations
 
-Each notebook script queries a different MLLM provider with face image pairs and saves per-pair textual explanations as `.txt` files. We adopt a multi-level prompting strategy with four prompt variants providing progressively increasing FR information. Full prompt templates and descriptions are documented in [PROMPTS.md](PROMPTS.md).
+Each notebook script queries a different MLLM provider with face image pairs and saves per-pair textual explanations as `.txt` files. We adopt a multi-level prompting strategy with four prompt variants providing progressively increasing FR information. Full prompt templates and descriptions are documented in [PROMPTS.md](PROMPTS.md). Example MLLM-generated explanations across prompt styles are available in [ExplanationExamples.md](ExplanationExamples.md).
 
 **OpenAI (GPT-4o / GPT-5.2)**
 ```bash
