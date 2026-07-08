@@ -240,15 +240,15 @@ pip install umap-learn
 If you use this code, please cite:
 
 ```bibtex
-@misc{sony2026mllmbasedtextualexplanationsface,
-      title={MLLM-based Textual Explanations for Face Comparison},
-      author={Redwan Sony and Anil K Jain and Arun Ross},
-      year={2026},
-      eprint={2603.16629},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2603.16629},
+@INPROCEEDINGS{sony2026mllm,
+  author={Sony, Redwan and Jain, Anil K. and Ross, Arun},
+  booktitle={2026 14th International Workshop on Biometrics and Forensics (IWBF)},
+  title={{MLLM}-Based Textual Explanations for Face Comparison},
+  year={2026},
+  pages={1-6},
+  doi={10.1109/IWBF68042.2026.11558159}
 }
 ```
 
 Preprint: [https://arxiv.org/abs/2603.16629](https://arxiv.org/abs/2603.16629)
+IEEEXplore Link: [https://ieeexplore.ieee.org/abstract/document/11558159][https://ieeexplore.ieee.org/abstract/document/11558159]
