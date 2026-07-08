@@ -250,5 +250,6 @@ If you use this code, please cite:
 }
 ```
 
-Preprint: [https://arxiv.org/abs/2603.16629](https://arxiv.org/abs/2603.16629)
-IEEEXplore Link: [https://ieeexplore.ieee.org/abstract/document/11558159](https://ieeexplore.ieee.org/abstract/document/11558159)
+- Preprint: [https://arxiv.org/abs/2603.16629](https://arxiv.org/abs/2603.16629)
+
+- IEEEXplore Link: [https://ieeexplore.ieee.org/abstract/document/11558159](https://ieeexplore.ieee.org/abstract/document/11558159)
